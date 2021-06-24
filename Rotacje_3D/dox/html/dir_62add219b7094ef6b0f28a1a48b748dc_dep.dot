@@ -1,0 +1,13 @@
+digraph "/home/marek/Pulpit/Dr. inż Krzysztof Arent PROJEKT " {
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  subgraph clusterdir_77b50abcf4a26f9896ca79cd271b7b9b {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Pulpit" fontname="FreeSans", fontsize="10", URL="dir_77b50abcf4a26f9896ca79cd271b7b9b.html"]
+  subgraph clusterdir_62add219b7094ef6b0f28a1a48b748dc {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_62add219b7094ef6b0f28a1a48b748dc.html"];
+    dir_62add219b7094ef6b0f28a1a48b748dc [shape=plaintext label="Dr. inż Krzysztof Arent PROJEKT "];
+    dir_d94315eced12a55e521c42ff8a0c9eba [shape=box label="Rotacje3D" color="red" fillcolor="white" style="filled" URL="dir_d94315eced12a55e521c42ff8a0c9eba.html"];
+  }
+  }
+}

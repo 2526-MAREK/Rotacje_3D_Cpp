@@ -1,0 +1,20 @@
+/*!
+ \mainpage Ogólna charakterystyka programu
+
+ \author Marek Szulak
+ \date   2021.05.11
+ \version 0.1
+
+
+*/
+
+
+/*
+ Ten fragment nie pojawi sie w dokumentacji.
+ Poniżej znajduje się przykład linii, która pozwala dołączyć
+ obraz graficzny. Dla aktualnej konfiguracji rysunek ten
+ powinien znaleźć się w podkartotece ./img
+ 
+ \image html class_diagram-main-classes.svg "Diagram klas"
+
+*/

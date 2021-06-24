@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Rotacje 3D: Dokumentacja pliku Macierz.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Rotacje 3D
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00005.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Komponenty</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku Macierz.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definicja szablonu i metod klasy <a class="el" href="a00048.html" title="Szablon Klasy modeluje pojęcie macierzy kwadratowej.">Macierz</a>.  
+<a href="#details">Więcej...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00017_source.html">Wektor.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00020_source.html">Wektor3D.hh</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla Macierz.hh:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00006.png" border="0" usemap="#_macierz_8hh" alt=""/></div>
+<map name="_macierz_8hh" id="_macierz_8hh">
+<area shape="rect" title="Definicja szablonu i metod klasy Macierz." alt="" coords="101,5,185,32"/>
+<area shape="rect" title=" " alt="" coords="5,229,77,256"/>
+<area shape="rect" title=" " alt="" coords="79,80,140,107"/>
+<area shape="rect" href="a00017.html" title="Definicja szablonu i metod klasy Wektor." alt="" coords="161,155,241,181"/>
+<area shape="rect" href="a00020.html" title="Plik defnicje klasy Wektor3D &#45; instancji szablonu klasy Wektor&lt;&gt;" alt="" coords="215,80,311,107"/>
+<area shape="rect" title=" " alt="" coords="101,229,168,256"/>
+<area shape="rect" title=" " alt="" coords="192,229,259,256"/>
+<area shape="rect" title=" " alt="" coords="283,229,349,256"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00007.png" border="0" usemap="#_macierz_8hhdep" alt=""/></div>
+<map name="_macierz_8hhdep" id="_macierz_8hhdep">
+<area shape="rect" title="Definicja szablonu i metod klasy Macierz." alt="" coords="270,5,354,32"/>
+<area shape="rect" href="a00011.html" title="Definicja klasy Prostopadloscian." alt="" coords="199,155,337,181"/>
+<area shape="rect" href="a00008.html" title="Plik defnicje klasy Macierz3x3 &#45; instancji szablonu klasy Macierz." alt="" coords="305,80,409,107"/>
+<area shape="rect" href="a00014.html" title="Plik zawiera defnicje struktury Scena." alt="" coords="162,229,238,256"/>
+<area shape="rect" href="a00032.html" title="Definicja metód klasy Prostopadloscian." alt="" coords="263,229,409,256"/>
+<area shape="rect" href="a00002.html" title=" " alt="" coords="35,304,162,331"/>
+<area shape="rect" href="a00029.html" title=" " alt="" coords="163,379,237,405"/>
+<area shape="rect" href="a00035.html" title=" " alt="" coords="237,304,320,331"/>
+<area shape="rect" href="a00023.html" title=" " alt="" coords="5,379,139,405"/>
+<area shape="rect" href="a00026.html" title=" " alt="" coords="362,155,473,181"/>
+</map>
+</div>
+</div>
+<p><a href="a00005_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Komponenty</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00048.html">Macierz&lt; Templ_Size &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Szablon Klasy modeluje pojęcie macierzy kwadratowej.  <a href="a00048.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a4cfc70ccd0e4292372fa3b2d92e5af6d"><td class="memTemplParams" colspan="2">template&lt;unsigned int Templ_Size&gt; </td></tr>
+<tr class="memitem:a4cfc70ccd0e4292372fa3b2d92e5af6d"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00005.html#a4cfc70ccd0e4292372fa3b2d92e5af6d">operator&lt;&lt;</a> (std::ostream &amp;StrmWy, const <a class="el" href="a00048.html">Macierz</a>&lt; Templ_Size &gt; &amp;MacRot)</td></tr>
+<tr class="memdesc:a4cfc70ccd0e4292372fa3b2d92e5af6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wyświetla na standardowe wyjście zawartość Macierzy Kwadratowej.  <a href="a00005.html#a4cfc70ccd0e4292372fa3b2d92e5af6d">Więcej...</a><br /></td></tr>
+<tr class="separator:a4cfc70ccd0e4292372fa3b2d92e5af6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Zawiera definicję szablonu i metod klasy <a class="el" href="a00048.html" title="Szablon Klasy modeluje pojęcie macierzy kwadratowej.">Macierz</a>. </p>
+
+<p class="definition">Definicja w pliku <a class="el" href="a00005_source.html">Macierz.hh</a>.</p>
+</div><h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="a4cfc70ccd0e4292372fa3b2d92e5af6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cfc70ccd0e4292372fa3b2d92e5af6d">&#9670;&nbsp;</a></span>operator&lt;&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned int Templ_Size&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>StrmWy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00048.html">Macierz</a>&lt; Templ_Size &gt; &amp;&#160;</td>
+          <td class="paramname"><em>MacRot</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funkcja przeciążająca operator '&lt;&lt;' dla szablonu klasy <a class="el" href="a00048.html" title="Szablon Klasy modeluje pojęcie macierzy kwadratowej.">Macierz</a>. Wczytuje do strumienia wyjściowego zawartość Macierzy kwadratowej. Funkcja wyświetla Zawartość Macierzy Kwadratowej</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">StrmWy</td><td>- Referncja na klase ostream </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">MacRot</td><td>- Referencja na obiekt szablonu klasy <a class="el" href="a00048.html" title="Szablon Klasy modeluje pojęcie macierzy kwadratowej.">Macierz</a> , który zawiera informacje o wartościach zawartych w macierzy</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Warunek wstępny</dt><dd>Obiekt MacRot musi mieć juz wcześniej zainicjowane wartośći Macierzy</dd></dl>
+<dl class="section post"><dt>Warunek końcowy</dt><dd>Wyświetlenie zawartości macierzy do strumienia wyjściowego</dd></dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Referncja na Obiekt (StrmWy) klasy ostream </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="a00005_source.html#l00207">207</a> pliku <a class="el" href="a00005_source.html">Macierz.hh</a>.</p>
+<div class="fragment"><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;{</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  StrmWy&lt;&lt;<span class="stringliteral">&quot;Macierz prezentuje się następująco: &quot;</span>&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Ind1= 0; Ind1&lt;Templ_Size;++Ind1)</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  {</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    StrmWy&lt;&lt;std::endl; </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Ind2= 0; Ind2&lt;Templ_Size;++Ind2)</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    {</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;      StrmWy.width(10);</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;      StrmWy&lt;&lt; MacRot(Ind1, Ind2)&lt;&lt;<span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  }</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  StrmWy&lt;&lt;std::endl&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keywordflow">return</span> StrmWy;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_d7941cd9cc40a53e22cedd7004f8798f.html">marek</a></li><li class="navelem"><a class="el" href="dir_77b50abcf4a26f9896ca79cd271b7b9b.html">Pulpit</a></li><li class="navelem"><a class="el" href="dir_7467f7efb2532f70a104fdd8d366f382.html">Praca 15 maja</a></li><li class="navelem"><a class="el" href="dir_0dcc3fa9db3b99505a65f37d943b4406.html">Rotacje 3D</a></li><li class="navelem"><a class="el" href="dir_14ce3118d0eddefafac2447ae6716afc.html">zalazek1 (kopia)</a></li><li class="navelem"><a class="el" href="dir_9df7d7ae1f38e943aae89a92cb764940.html">prj</a></li><li class="navelem"><a class="el" href="dir_e4dc7d654a90e516000d9ebc3470ae19.html">inc</a></li><li class="navelem"><a class="el" href="a00005.html">Macierz.hh</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

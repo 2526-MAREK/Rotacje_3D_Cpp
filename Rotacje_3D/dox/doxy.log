@@ -1,0 +1,28 @@
+warning: doxygen no longer ships with the FreeSans font.
+You may want to clear or change DOT_FONTNAME.
+Otherwise you run the risk that the wrong font is being used for dot generated graphs.
+warning: The selected output language "polish" has not been updated
+since release 1.8.2.  As a result some sentences may appear in English.
+
+warning: source ./img is not a readable file or directory... skipping.
+/home/marek/Pulpit/Praca 15 maja/Rotacje 3D/zalazek1 (kopia)/prj/inc/Wektor.hh:240: warning: Reached end of file while still inside a (nested) comment. Nesting level 1 (probable line reference: 233)
+/home/marek/Pulpit/Praca 15 maja/Rotacje 3D/zalazek1 (kopia)/prj/src/main.cpp:39: warning: argument 'Przesuniecie' of command @param is not found in the argument list of ZapisWspolrzednychDoPliku(const char *sNazwaPliku, Prostopadloscian &Pr)
+/home/marek/Pulpit/Praca 15 maja/Rotacje 3D/zalazek1 (kopia)/prj/inc/FunkcjeOgolne.hh:21: warning: The following parameter of ZapisWspolrzednychDoPliku(const char *sNazwaPliku, Prostopadloscian &Pr) is not documented:
+  parameter 'Pr'
+/home/marek/Pulpit/Praca 15 maja/Rotacje 3D/zalazek1 (kopia)/prj/src/main.cpp:20: warning: argument 'Przesuniecie' of command @param is not found in the argument list of ZapisWspolrzednychDoStrumienia(std::ostream &StrmWy, Prostopadloscian &Wierzcholki)
+/home/marek/Pulpit/Praca 15 maja/Rotacje 3D/zalazek1 (kopia)/prj/inc/FunkcjeOgolne.hh:22: warning: The following parameter of ZapisWspolrzednychDoStrumienia(std::ostream &StrmWy, Prostopadloscian &Wierzcholki) is not documented:
+  parameter 'Wierzcholki'
+/home/marek/Pulpit/Praca 15 maja/Rotacje 3D/zalazek1 (kopia)/prj/src/main.cpp:39: warning: argument 'Przesuniecie' of command @param is not found in the argument list of ZapisWspolrzednychDoPliku(const char *sNazwaPliku, Prostopadloscian &Pr)
+/home/marek/Pulpit/Praca 15 maja/Rotacje 3D/zalazek1 (kopia)/prj/src/main.cpp:51: warning: The following parameter of ZapisWspolrzednychDoPliku(const char *sNazwaPliku, Prostopadloscian &Pr) is not documented:
+  parameter 'Pr'
+/home/marek/Pulpit/Praca 15 maja/Rotacje 3D/zalazek1 (kopia)/prj/src/main.cpp:20: warning: argument 'Przesuniecie' of command @param is not found in the argument list of ZapisWspolrzednychDoStrumienia(std::ostream &StrmWy, Prostopadloscian &Wierzcholki)
+/home/marek/Pulpit/Praca 15 maja/Rotacje 3D/zalazek1 (kopia)/prj/src/main.cpp:34: warning: The following parameter of ZapisWspolrzednychDoStrumienia(std::ostream &StrmWy, Prostopadloscian &Wierzcholki) is not documented:
+  parameter 'Wierzcholki'
+/home/marek/Pulpit/Praca 15 maja/Rotacje 3D/zalazek1 (kopia)/prj/src/Prostopadloscian.cpp:82: warning: argument 'MatRot' of command @param is not found in the argument list of Prostopadloscian::ObrotProstopadloscianu(Macierz3x3 &MacRot)
+/home/marek/Pulpit/Praca 15 maja/Rotacje 3D/zalazek1 (kopia)/prj/inc/Prostopadloscian.hh:70: warning: The following parameter of Prostopadloscian::ObrotProstopadloscianu(Macierz3x3 &MacRot) is not documented:
+  parameter 'MacRot'
+/home/marek/Pulpit/Praca 15 maja/Rotacje 3D/zalazek1 (kopia)/prj/src/Prostopadloscian.cpp:111: warning: argument 'MatRot1' of command @param is not found in the argument list of Prostopadloscian::ObrotProstopadloscianu(Macierz3x3 &MacRot1, Macierz3x3 &MacRot2)
+/home/marek/Pulpit/Praca 15 maja/Rotacje 3D/zalazek1 (kopia)/prj/src/Prostopadloscian.cpp:111: warning: argument 'MatRot2' of command @param is not found in the argument list of Prostopadloscian::ObrotProstopadloscianu(Macierz3x3 &MacRot1, Macierz3x3 &MacRot2)
+/home/marek/Pulpit/Praca 15 maja/Rotacje 3D/zalazek1 (kopia)/prj/inc/Prostopadloscian.hh:74: warning: The following parameters of Prostopadloscian::ObrotProstopadloscianu(Macierz3x3 &MacRot1, Macierz3x3 &MacRot2) are not documented:
+  parameter 'MacRot1'
+  parameter 'MacRot2'

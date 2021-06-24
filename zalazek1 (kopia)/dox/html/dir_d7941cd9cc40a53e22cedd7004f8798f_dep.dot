@@ -1,0 +1,13 @@
+digraph "/home/marek" {
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  subgraph clusterdir_43e0a1f539e00dcfa1a6bc4d4fee4fc2 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="home" fontname="FreeSans", fontsize="10", URL="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html"]
+  subgraph clusterdir_d7941cd9cc40a53e22cedd7004f8798f {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_d7941cd9cc40a53e22cedd7004f8798f.html"];
+    dir_d7941cd9cc40a53e22cedd7004f8798f [shape=plaintext label="marek"];
+    dir_77b50abcf4a26f9896ca79cd271b7b9b [shape=box label="Pulpit" color="red" fillcolor="white" style="filled" URL="dir_77b50abcf4a26f9896ca79cd271b7b9b.html"];
+  }
+  }
+}

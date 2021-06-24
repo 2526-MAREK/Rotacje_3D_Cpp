@@ -1,0 +1,11 @@
+digraph "/home/marek/Pulpit/Dr. inż Krzysztof Arent PROJEKT /Rotacje3D/z4/zalazek/prj/src" {
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  subgraph clusterdir_bf00905d7c7737bae56f0fb615337019 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="prj" fontname="FreeSans", fontsize="10", URL="dir_bf00905d7c7737bae56f0fb615337019.html"]
+  dir_0f112c60a1d5bc41314b6c2dde84a70b [shape=box, label="src", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_0f112c60a1d5bc41314b6c2dde84a70b.html"];
+  }
+  dir_afbd13abc06ee5126adc50a6919c94d7 [shape=box label="inc" URL="dir_afbd13abc06ee5126adc50a6919c94d7.html"];
+  dir_0f112c60a1d5bc41314b6c2dde84a70b->dir_afbd13abc06ee5126adc50a6919c94d7 [headlabel="6", labeldistance=1.5 headhref="dir_000011_000010.html"];
+}

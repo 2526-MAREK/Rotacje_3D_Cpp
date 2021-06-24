@@ -1,0 +1,128 @@
+#ifndef MACIERZ_HH
+#define MACIERZ_HH
+
+
+#include <iostream>
+#include <math.h>
+#include "Wektor.hh"
+#include "Wektor3D.hh"
+
+#define ALFA MacRot.Alfa() 
+
+/*!
+ * \file
+ * \brief Definicja szablonu klasy Macierz
+ *
+ * Zawiera definicję szablonu klasy Macierz. 
+ * 
+ */
+
+/*!
+ * \brief Klasa modeluje pojęcie macierzy 2x2, posiada informacje o zawartośći macierzy
+ */
+template<unsigned int Templ_Size>
+class Macierz {
+private:  
+  double Tab[Templ_Size][Templ_Size]; //Macierz będzie zawierać sinusy i cosinusy danych kątów
+  double KatWRadianach;
+  int KatWStopniach;
+public:
+  Macierz(); //konstruktor domyślny
+  Macierz(const std::initializer_list<double> &rListaWsp);
+  double operator () (unsigned int Wie,unsigned int Kol) const { assert((Wie < Templ_Size)||(Kol < Templ_Size)); return Tab[Wie][Kol]; }
+  double& operator () (unsigned int Wie,unsigned int Kol) { assert((Wie < Templ_Size)||(Kol < Templ_Size)); return Tab[Wie][Kol]; }
+  void WczytajKatWStopniach();
+  inline double Alfa() { return KatWRadianach;}
+  inline void ZmianaStopniNaRadiany(){KatWRadianach = (2*M_PI*KatWStopniach)/360;}
+  /*!
+  * \brief Mnoży macierz przez wektor
+  */
+  Wektor<Templ_Size> operator *(const Wektor<Templ_Size> &Wktr) const;
+  //Macierz operator *(const Macierz &MacRot1) const;
+  ~Macierz(); //destruktor
+};
+
+/*Konstruktor Domyślny*/
+template <unsigned int Templ_Size>
+Macierz<Templ_Size>::Macierz()
+{
+    /*Inicjalizuje tablice i dane zerami*/
+    for(double* ElemTab: Tab)
+      *ElemTab = 0;
+    KatWStopniach = KatWRadianach = 0;
+}
+
+/*konstruktor klasy Macierz*/
+template <unsigned int Templ_Size>
+Macierz<Templ_Size>::Macierz(const std::initializer_list<double> &rListaWsp) : Macierz() 
+{
+  assert(rListaWsp.size() <= 2*Templ_Size);
+
+  double Tab_tymczas[2*Templ_Size];
+  int Ind = -1;
+  for(double Wsp_i : rListaWsp)
+    Tab_tymczas[++Ind] = Wsp_i;
+
+  Ind = -1;    
+  for(int unsigned Ind1 = 0;Ind1<Templ_Size;++Ind1){
+    for(int unsigned Ind2=0;Ind2<Templ_Size;++Ind2)
+      Tab[Ind1][Ind2] = Tab_tymczas[++Ind];
+  }
+}
+
+template <unsigned int Templ_Size>
+void Macierz<Templ_Size>::WczytajKatWStopniach()
+{
+    std::cout<<"Podaj wartosc kata obrotu w stopniach"<<std::endl;
+
+    while(!(std::cin>>KatWStopniach)){//Nie udało się wczytać 
+        CzyszczenieStrumieniaWejsciowego(std::cin);
+        KomunikatOBledzie();
+    }
+}
+
+/*!
+  *  Funkcja przeciązająca operator '*'(mnozenia), która 
+  * korzysta z macierzy rotacji i obiektu Wektor. 
+  *  Obiekty te służą do wykorzystania wzoru na obrót 
+  * danego punktu o zadany kąt wokół środka układu 
+  * wspólrzednych. 
+  * 
+  * \param[in] Wektor - Referncja na obiekt klasy Wektor2D zawierący
+  * informacje o współrzędnych wierzchołka prostokąta
+  *
+  * Tab[][] - Tablica dwuwymiarowa , która jest 
+  * Macierzą rotacji zawierająca odpowiednie 
+  * sinsuy i cosinsu kąta obrotu prostokąta, niezbędna
+  * do wykorzystania wzoru na obrót danego punktu wokół
+  * środka ukłądu współrzednych.
+  * 
+  * \pre Obiekt Wektor musi mieć wcześniej zainicjalizowane dane 
+  * o współrzednych punktu wierzchołka prostokąta.
+  * 
+  * \pre Tablica Tab[][] musi mieć dane o sinusach i cosinsuach 
+  * odpowiedniego kąta obrotu.
+  *
+  * \post Prawidłowo obliczone i zwrócone przez wartość Współrzedne
+  *  obróconego już punktu wierzchołka prostokąta. 
+  *
+  *  \return Funkcja zwraca przez wartość zainicjowany obiekt przez
+  *  konstruktor klasy Wektor2D.
+  */
+template <unsigned int Templ_Size>
+Wektor<Templ_Size> Macierz<Templ_Size>::operator *(const Wektor<Templ_Size> &Wktr) const
+{
+Wektor<Templ_Size> Wek;
+for(unsigned int Ind1 = 0;Ind1<Templ_Size;++Ind1){
+  for(unsigned int Ind2 = 0;Ind2<Templ_Size;++Ind2){
+    Wek[Ind1] = Wek[Ind1] + Wktr[Ind2]*Tab[Ind1][Ind2];
+  }
+}
+return Wek;
+}
+
+/*Destruktor*/
+template <unsigned int Templ_Size>
+Macierz<Templ_Size>::~Macierz(){}
+
+#endif

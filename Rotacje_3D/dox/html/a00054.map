@@ -1,0 +1,8 @@
+<map id="Scena" name="Scena">
+<area shape="rect" id="node1" title="Definicja Struktury Scena." alt="" coords="130,273,189,300"/>
+<area shape="rect" id="node2" href="$a00052.html" title="Klasa modeluje pojęcie Prostopadłościanu w 3 wymiarach." alt="" coords="31,184,154,211"/>
+<area shape="rect" id="node3" href="$a00060.html" title=" " alt="" coords="36,95,128,121"/>
+<area shape="rect" id="node4" href="$a00060.html" title="Szablon Klasy modeluje pojęcie Wektora." alt="" coords="5,5,159,32"/>
+<area shape="rect" id="node5" href="$a00048.html" title=" " alt="" coords="182,184,278,211"/>
+<area shape="rect" id="node6" href="$a00048.html" title="Szablon Klasy modeluje pojęcie macierzy kwadratowej." alt="" coords="153,95,310,121"/>
+</map>

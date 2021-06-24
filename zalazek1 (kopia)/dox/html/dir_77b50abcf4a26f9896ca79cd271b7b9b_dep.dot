@@ -1,0 +1,13 @@
+digraph "/home/marek/Pulpit" {
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  subgraph clusterdir_d7941cd9cc40a53e22cedd7004f8798f {
+    graph [ bgcolor="#ddddee", pencolor="black", label="marek" fontname="FreeSans", fontsize="10", URL="dir_d7941cd9cc40a53e22cedd7004f8798f.html"]
+  subgraph clusterdir_77b50abcf4a26f9896ca79cd271b7b9b {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_77b50abcf4a26f9896ca79cd271b7b9b.html"];
+    dir_77b50abcf4a26f9896ca79cd271b7b9b [shape=plaintext label="Pulpit"];
+    dir_62add219b7094ef6b0f28a1a48b748dc [shape=box label="Dr. inż Krzysztof Arent PROJEKT " color="red" fillcolor="white" style="filled" URL="dir_62add219b7094ef6b0f28a1a48b748dc.html"];
+  }
+  }
+}

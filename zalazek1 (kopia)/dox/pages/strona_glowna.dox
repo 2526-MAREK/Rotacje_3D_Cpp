@@ -1,0 +1,22 @@
+/*!
+ \mainpage Ogólna charakterystyka programu
+
+ \author Jan Kowalski
+ \date   2021.04.22
+ \version 0.1
+
+ \section class-diagram  Diagram podstawowych klas
+
+
+*/
+
+
+/*
+ Ten fragment nie pojawi sie w dokumentacji.
+ Poniżej znajduje się przykład linii, która pozwala dołączyć
+ obraz graficzny. Dla aktualnej konfiguracji rysunek ten
+ powinien znaleźć się w podkartotece ./img
+ 
+ \image html class_diagram-main-classes.svg "Diagram klas"
+
+*/

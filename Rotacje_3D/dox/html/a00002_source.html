@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Rotacje 3D: Plik źródłowy FunkcjeOgolne.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Rotacje 3D
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00002_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">FunkcjeOgolne.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00002.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FUNKCJEOGOLNE_HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define FUNKCJEOGOLNE_HH</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;lacze_do_gnuplota.hh&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="a00014.html">Scena.hh</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="a00002.html#ad22c94c78a741ad767300c9b586ac4f8">    9</a></span>&#160;<span class="preprocessor">#define ALFA KatObrotu[(*wsk_i)]</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="a00002.html#a80593811921566ffea4a234c5fc14c6c">   10</a></span>&#160;<span class="preprocessor">#define ILOSC_KATOW_OBROTOW 100</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="a00052.html">Prostopadloscian</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">struct </span><a class="code" href="a00056.html">Scena</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="a00002.html#a6ee48697fc1eb428abb6757f11560009">   15</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="a00002.html#a6ee48697fc1eb428abb6757f11560009">KomunikatOBledzie</a>() {  std::cerr&lt;&lt;<span class="stringliteral">&quot;Blad formatu wprowadzanej liczby, program tutaj&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="stringliteral">&quot; oczekuje tylko liczb calkowitych, mozesz powtorzyc wprowadzanie:&quot;</span>&lt;&lt;std::endl;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00002.html#a16c955198f6b4949677e553ef92fbacd">CzyszczenieStrumieniaWejsciowego</a>(std::istream &amp;StrmWe);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">int</span> <a class="code" href="a00002.html#a7c2239a45c4a2c225f908043c059f4b1">Menu</a>(<a class="code" href="a00052.html">Prostopadloscian</a> &amp;Pr, <a class="code" href="a00060.html">Wektor3D</a> &amp;Wktr, <a class="code" href="a00048.html">Macierz3x3</a> &amp;MacRot, PzG::LaczeDoGNUPlota &amp;Lacze,<a class="code" href="a00056.html">Scena</a> *Sc, <span class="keywordtype">int</span> *wskIloscStruktur);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">int</span> <a class="code" href="a00002.html#ab71786fa999487e067f9602b5cfb05f4">ZapiszDoPlikuINarysujProstokat</a>(<a class="code" href="a00052.html">Prostopadloscian</a> &amp;Pr, PzG::LaczeDoGNUPlota &amp;Lacze);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00002.html#ae7c1829950587c3c9eb9089684150c19">WyswietlMenu</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="a00002.html#ab01a137f96e2f992cedef94bd11d7bb9">ZapisWspolrzednychDoPliku</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>  *sNazwaPliku, <a class="code" href="a00052.html">Prostopadloscian</a> &amp;Pr);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00002.html#aad770e514e1f5b85763e0abd65e59286">ZapisWspolrzednychDoStrumienia</a>( std::ostream&amp;     StrmWy, <a class="code" href="a00052.html">Prostopadloscian</a>&amp; Wierzcholki);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00002.html#a09b16150d4c7b5f46d58a9c7822fca92">WczytajKatWStopniachIZamienNaRadiany</a>(<span class="keywordtype">double</span>* KatObrotu, <span class="keywordtype">int</span> IndeksDanej);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00002.html#abeeb3ad7457c98c6c1f6446ae55ac429">UruchomObrotProstopadloscianuIZapamietajMacRot</a>(<a class="code" href="a00048.html">Macierz3x3</a> &amp;MacRot, <a class="code" href="a00048.html">Macierz3x3</a> &amp;MacRotTym, <a class="code" href="a00052.html">Prostopadloscian</a> &amp;Pr, <a class="code" href="a00056.html">Scena</a> *Sc, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> *wskIloscStruktur, <span class="keywordtype">int</span> i2);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00002.html#a0ada81ade06db9c772c1cc418a8762b5">WczytajDaneDoPrzesunieciaProstopadloscianu</a>(<a class="code" href="a00052.html">Prostopadloscian</a> &amp;Pr, <a class="code" href="a00060.html">Wektor3D</a> &amp;Wktr, <span class="keywordtype">int</span> *wskIloscStruktur);</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00002.html#aca9fe9cd1d0781c3f377dd2d597a5f0f">   26</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code" href="a00002.html#aca9fe9cd1d0781c3f377dd2d597a5f0f">ZamianaStopniNaRadiany</a>(<span class="keywordtype">double</span> KatWStopniach){<span class="keywordtype">double</span> KatWRadianach = (2*M_PI*KatWStopniach)/360; <span class="keywordflow">return</span> KatWRadianach;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">int</span> <a class="code" href="a00002.html#afe0d55c11f1e4c93821b82bddc5a91c1">WczytajDaneDoObrotuProstopadloscianu</a>(<a class="code" href="a00048.html">Macierz3x3</a> &amp;MacRot, <a class="code" href="a00052.html">Prostopadloscian</a> &amp;Pr, <a class="code" href="a00056.html">Scena</a> *Sc, <span class="keywordtype">int</span> *wskIloscStruktur);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00002.html#a6f6452873b9d096487556da0cac51631">WywolanieObrotuWedlugOdpowiednichOznaczen</a>(<a class="code" href="a00048.html">Macierz3x3</a> &amp;MacRot, <a class="code" href="a00052.html">Prostopadloscian</a> &amp;Pr, <a class="code" href="a00056.html">Scena</a> *Sc,<span class="keywordtype">int</span> *wskIloscStruktur,std::string &amp;OznaczeniaOsiObrotu,<span class="keywordtype">double</span>* KatObrotu, <span class="keywordtype">int</span> IndeksDanej, <span class="keywordtype">int</span> IloscPowtorzen);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">int</span> <a class="code" href="a00002.html#abdbb0c6454ab4e9b7b42689716edd20e">WczytajIloscPowtorzenOperacjiObrotu</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00002.html#a9c16741d2bb4a217b460865859d4adb4">WczytanieKataObrotuIOznaczeniaOsi</a>(std::string &amp;OznaczeniaOsiObrotu, <span class="keywordtype">double</span>* KatObrotu,<span class="keywordtype">int</span>* wsk_IndeksDanej, <span class="keywordtype">char</span> OznaczenieOsi);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00002.html#af00bae8d4f89cc1a26dba33ad6ec9a35">WybierzNastOznaczenie</a>(std::string&amp; OznaczeniaOsiObrotu,<span class="keywordtype">double</span>* KatObrotu,<a class="code" href="a00048.html">Macierz3x3</a>&amp; MacRot,<a class="code" href="a00052.html">Prostopadloscian</a>&amp; Pr,<a class="code" href="a00056.html">Scena</a>* Sc,<span class="keywordtype">int</span>* wskIloscStruktur,<span class="keywordtype">int</span> *wsk_i, <span class="keywordtype">int</span> i2 );</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;std::ostream&amp; <a class="code" href="a00002.html#aa884d1a8aaa66cc9e85f30d94da0df06">operator &lt;&lt;</a>(std::ostream &amp; StrmWy,<span class="keyword">const</span> <a class="code" href="a00052.html">Prostopadloscian</a> &amp; Pr);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00002_html_abdbb0c6454ab4e9b7b42689716edd20e"><div class="ttname"><a href="a00002.html#abdbb0c6454ab4e9b7b42689716edd20e">WczytajIloscPowtorzenOperacjiObrotu</a></div><div class="ttdeci">int WczytajIloscPowtorzenOperacjiObrotu()</div><div class="ttdef"><b>Definition:</b> <a href="a00029_source.html#l00266">main.cpp:266</a></div></div>
+<div class="ttc" id="aa00002_html_a09b16150d4c7b5f46d58a9c7822fca92"><div class="ttname"><a href="a00002.html#a09b16150d4c7b5f46d58a9c7822fca92">WczytajKatWStopniachIZamienNaRadiany</a></div><div class="ttdeci">void WczytajKatWStopniachIZamienNaRadiany(double *KatObrotu, int IndeksDanej)</div><div class="ttdef"><b>Definition:</b> <a href="a00029_source.html#l00249">main.cpp:249</a></div></div>
+<div class="ttc" id="aa00002_html_aca9fe9cd1d0781c3f377dd2d597a5f0f"><div class="ttname"><a href="a00002.html#aca9fe9cd1d0781c3f377dd2d597a5f0f">ZamianaStopniNaRadiany</a></div><div class="ttdeci">double ZamianaStopniNaRadiany(double KatWStopniach)</div><div class="ttdef"><b>Definition:</b> <a href="a00002_source.html#l00026">FunkcjeOgolne.hh:26</a></div></div>
+<div class="ttc" id="aa00002_html_ae7c1829950587c3c9eb9089684150c19"><div class="ttname"><a href="a00002.html#ae7c1829950587c3c9eb9089684150c19">WyswietlMenu</a></div><div class="ttdeci">void WyswietlMenu()</div><div class="ttdef"><b>Definition:</b> <a href="a00029_source.html#l00235">main.cpp:235</a></div></div>
+<div class="ttc" id="aa00002_html_a16c955198f6b4949677e553ef92fbacd"><div class="ttname"><a href="a00002.html#a16c955198f6b4949677e553ef92fbacd">CzyszczenieStrumieniaWejsciowego</a></div><div class="ttdeci">void CzyszczenieStrumieniaWejsciowego(std::istream &amp;StrmWe)</div><div class="ttdef"><b>Definition:</b> <a href="a00029_source.html#l00150">main.cpp:150</a></div></div>
+<div class="ttc" id="aa00002_html_ab01a137f96e2f992cedef94bd11d7bb9"><div class="ttname"><a href="a00002.html#ab01a137f96e2f992cedef94bd11d7bb9">ZapisWspolrzednychDoPliku</a></div><div class="ttdeci">bool ZapisWspolrzednychDoPliku(const char *sNazwaPliku, Prostopadloscian &amp;Pr)</div><div class="ttdef"><b>Definition:</b> <a href="a00029_source.html#l00051">main.cpp:51</a></div></div>
+<div class="ttc" id="aa00002_html_aad770e514e1f5b85763e0abd65e59286"><div class="ttname"><a href="a00002.html#aad770e514e1f5b85763e0abd65e59286">ZapisWspolrzednychDoStrumienia</a></div><div class="ttdeci">void ZapisWspolrzednychDoStrumienia(std::ostream &amp;StrmWy, Prostopadloscian &amp;Wierzcholki)</div><div class="ttdef"><b>Definition:</b> <a href="a00029_source.html#l00034">main.cpp:34</a></div></div>
+<div class="ttc" id="aa00052_html"><div class="ttname"><a href="a00052.html">Prostopadloscian</a></div><div class="ttdoc">Klasa modeluje pojęcie Prostopadłościanu w 3 wymiarach.</div><div class="ttdef"><b>Definition:</b> <a href="a00011_source.html#l00026">Prostopadloscian.hh:26</a></div></div>
+<div class="ttc" id="aa00002_html_a9c16741d2bb4a217b460865859d4adb4"><div class="ttname"><a href="a00002.html#a9c16741d2bb4a217b460865859d4adb4">WczytanieKataObrotuIOznaczeniaOsi</a></div><div class="ttdeci">void WczytanieKataObrotuIOznaczeniaOsi(std::string &amp;OznaczeniaOsiObrotu, double *KatObrotu, int *wsk_IndeksDanej, char OznaczenieOsi)</div><div class="ttdef"><b>Definition:</b> <a href="a00029_source.html#l00259">main.cpp:259</a></div></div>
+<div class="ttc" id="aa00060_html"><div class="ttname"><a href="a00060.html">Wektor</a></div><div class="ttdoc">Szablon Klasy modeluje pojęcie Wektora.</div><div class="ttdef"><b>Definition:</b> <a href="a00017_source.html#l00033">Wektor.hh:33</a></div></div>
+<div class="ttc" id="aa00002_html_af00bae8d4f89cc1a26dba33ad6ec9a35"><div class="ttname"><a href="a00002.html#af00bae8d4f89cc1a26dba33ad6ec9a35">WybierzNastOznaczenie</a></div><div class="ttdeci">void WybierzNastOznaczenie(std::string &amp;OznaczeniaOsiObrotu, double *KatObrotu, Macierz3x3 &amp;MacRot, Prostopadloscian &amp;Pr, Scena *Sc, int *wskIloscStruktur, int *wsk_i, int i2)</div><div class="ttdef"><b>Definition:</b> <a href="a00029_source.html#l00292">main.cpp:292</a></div></div>
+<div class="ttc" id="aa00002_html_a6ee48697fc1eb428abb6757f11560009"><div class="ttname"><a href="a00002.html#a6ee48697fc1eb428abb6757f11560009">KomunikatOBledzie</a></div><div class="ttdeci">void KomunikatOBledzie()</div><div class="ttdef"><b>Definition:</b> <a href="a00002_source.html#l00015">FunkcjeOgolne.hh:15</a></div></div>
+<div class="ttc" id="aa00002_html_a6f6452873b9d096487556da0cac51631"><div class="ttname"><a href="a00002.html#a6f6452873b9d096487556da0cac51631">WywolanieObrotuWedlugOdpowiednichOznaczen</a></div><div class="ttdeci">void WywolanieObrotuWedlugOdpowiednichOznaczen(Macierz3x3 &amp;MacRot, Prostopadloscian &amp;Pr, Scena *Sc, int *wskIloscStruktur, std::string &amp;OznaczeniaOsiObrotu, double *KatObrotu, int IndeksDanej, int IloscPowtorzen)</div><div class="ttdef"><b>Definition:</b> <a href="a00029_source.html#l00316">main.cpp:316</a></div></div>
+<div class="ttc" id="aa00014_html"><div class="ttname"><a href="a00014.html">Scena.hh</a></div><div class="ttdoc">Plik zawiera defnicje struktury Scena.</div></div>
+<div class="ttc" id="aa00002_html_afe0d55c11f1e4c93821b82bddc5a91c1"><div class="ttname"><a href="a00002.html#afe0d55c11f1e4c93821b82bddc5a91c1">WczytajDaneDoObrotuProstopadloscianu</a></div><div class="ttdeci">int WczytajDaneDoObrotuProstopadloscianu(Macierz3x3 &amp;MacRot, Prostopadloscian &amp;Pr, Scena *Sc, int *wskIloscStruktur)</div><div class="ttdef"><b>Definition:</b> <a href="a00029_source.html#l00379">main.cpp:379</a></div></div>
+<div class="ttc" id="aa00056_html"><div class="ttname"><a href="a00056.html">Scena</a></div><div class="ttdoc">Definicja Struktury Scena.</div><div class="ttdef"><b>Definition:</b> <a href="a00014_source.html#l00024">Scena.hh:24</a></div></div>
+<div class="ttc" id="aa00002_html_aa884d1a8aaa66cc9e85f30d94da0df06"><div class="ttname"><a href="a00002.html#aa884d1a8aaa66cc9e85f30d94da0df06">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;StrmWy, const Prostopadloscian &amp;Pr)</div><div class="ttdef"><b>Definition:</b> <a href="a00032_source.html#l00068">Prostopadloscian.cpp:68</a></div></div>
+<div class="ttc" id="aa00002_html_ab71786fa999487e067f9602b5cfb05f4"><div class="ttname"><a href="a00002.html#ab71786fa999487e067f9602b5cfb05f4">ZapiszDoPlikuINarysujProstokat</a></div><div class="ttdeci">int ZapiszDoPlikuINarysujProstokat(Prostopadloscian &amp;Pr, PzG::LaczeDoGNUPlota &amp;Lacze)</div><div class="ttdef"><b>Definition:</b> <a href="a00029_source.html#l00069">main.cpp:69</a></div></div>
+<div class="ttc" id="aa00002_html_abeeb3ad7457c98c6c1f6446ae55ac429"><div class="ttname"><a href="a00002.html#abeeb3ad7457c98c6c1f6446ae55ac429">UruchomObrotProstopadloscianuIZapamietajMacRot</a></div><div class="ttdeci">void UruchomObrotProstopadloscianuIZapamietajMacRot(Macierz3x3 &amp;MacRot, Macierz3x3 &amp;MacRotTym, Prostopadloscian &amp;Pr, Scena *Sc, int i, int *wskIloscStruktur, int i2)</div><div class="ttdef"><b>Definition:</b> <a href="a00029_source.html#l00284">main.cpp:284</a></div></div>
+<div class="ttc" id="aa00002_html_a7c2239a45c4a2c225f908043c059f4b1"><div class="ttname"><a href="a00002.html#a7c2239a45c4a2c225f908043c059f4b1">Menu</a></div><div class="ttdeci">int Menu(Prostopadloscian &amp;Pr, Wektor3D &amp;Wktr, Macierz3x3 &amp;MacRot, PzG::LaczeDoGNUPlota &amp;Lacze, Scena *Sc, int *wskIloscStruktur)</div><div class="ttdef"><b>Definition:</b> <a href="a00029_source.html#l00160">main.cpp:160</a></div></div>
+<div class="ttc" id="aa00048_html"><div class="ttname"><a href="a00048.html">Macierz</a></div><div class="ttdoc">Szablon Klasy modeluje pojęcie macierzy kwadratowej.</div><div class="ttdef"><b>Definition:</b> <a href="a00005_source.html#l00025">Macierz.hh:25</a></div></div>
+<div class="ttc" id="aa00002_html_a0ada81ade06db9c772c1cc418a8762b5"><div class="ttname"><a href="a00002.html#a0ada81ade06db9c772c1cc418a8762b5">WczytajDaneDoPrzesunieciaProstopadloscianu</a></div><div class="ttdeci">void WczytajDaneDoPrzesunieciaProstopadloscianu(Prostopadloscian &amp;Pr, Wektor3D &amp;Wktr, int *wskIloscStruktur)</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_d7941cd9cc40a53e22cedd7004f8798f.html">marek</a></li><li class="navelem"><a class="el" href="dir_77b50abcf4a26f9896ca79cd271b7b9b.html">Pulpit</a></li><li class="navelem"><a class="el" href="dir_7467f7efb2532f70a104fdd8d366f382.html">Praca 15 maja</a></li><li class="navelem"><a class="el" href="dir_0dcc3fa9db3b99505a65f37d943b4406.html">Rotacje 3D</a></li><li class="navelem"><a class="el" href="dir_14ce3118d0eddefafac2447ae6716afc.html">zalazek1 (kopia)</a></li><li class="navelem"><a class="el" href="dir_9df7d7ae1f38e943aae89a92cb764940.html">prj</a></li><li class="navelem"><a class="el" href="dir_e4dc7d654a90e516000d9ebc3470ae19.html">inc</a></li><li class="navelem"><a class="el" href="a00002.html">FunkcjeOgolne.hh</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

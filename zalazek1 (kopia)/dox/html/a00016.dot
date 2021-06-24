@@ -1,0 +1,11 @@
+digraph "/home/marek/Pulpit/Dr. inż Krzysztof Arent PROJEKT /Rotacje3D/z4/zalazek/prj/inc/Wektor3D.hh"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="/home/marek/Pulpit\l/Dr. inż Krzysztof\l Arent PROJEKT /Rotacje3D\l/z4/zalazek/prj/inc/Wektor3D.hh",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Plik zawiera ..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="/home/marek/Pulpit\l/Dr. inż Krzysztof\l Arent PROJEKT /Rotacje3D\l/z4/zalazek/prj/src/main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00020.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="/home/marek/Pulpit\l/Dr. inż Krzysztof\l Arent PROJEKT /Rotacje3D\l/z4/zalazek/prj/src/Wektor3D.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00029.html",tooltip=" "];
+}
